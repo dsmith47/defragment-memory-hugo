@@ -3,6 +3,7 @@ author = "Doug Smith"
 title = "C++ Core Guidelines: Introduction"
 date = "2023-10-31"
 description = "Guiding philosophy on C++"
+draft = True
 
 categories = [
   "Tech E Book Club"
