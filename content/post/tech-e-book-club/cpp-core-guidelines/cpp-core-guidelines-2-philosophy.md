@@ -24,7 +24,7 @@ pratice in programming languages, so I won't cover everything exhaustively,
 but here's the list for completness.
 
 1. Express ideas directly in code
-2. Writ in ISO Standard C++
+2. Write in ISO Standard C++
 3. Express intent
 4. Ideally, a program should be statically type safe
 5. Prefer compile-time checking to run-time checking
@@ -41,13 +41,25 @@ To talk about them more, I've packaged these ideas into a few broad categories.
 
 ## Be a Good (Object-Oriented) Programmer
 
-1 is just good advice in any programming language. Methods, classes, and
+1 and 3 are just good advice in any programming language. Methods, classes, and
 variables should be self-documenting if at all possible, b/c comments can get
 seperated from the logic it documents, but you can't seperate logic from
 itself. I do think "Compilers don't read comments... and neither do many
 programmers..." is a pretty funny way to state this imperative, though.
 
-## Take Advantage of Static Typing
+6 and 7 are reminders to check boundaries and "if you're going to fail, fail
+fast".
+
+## Take Advantage of Static Typing and your Compiler
+
+4 reduces to "make programs type safe" which is worth encouraging over the
+unholy pointer-casting mess I used to churn out for school.
+
+5 took me a little bit of time to understand, because compile-time checking
+combines static typing (mentioned above) with a feature I was less familiar
+with: static assertions. As a quick aside, static assertions apply some logic
+at compile time (like sizing a data type), rather than spending time executing
+instructions in the final binary.
 
 ## Be Aware that this is a lower-level language
 
