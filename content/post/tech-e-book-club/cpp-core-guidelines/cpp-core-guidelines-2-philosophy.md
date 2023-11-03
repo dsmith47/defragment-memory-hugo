@@ -50,6 +50,33 @@ programmers..." is a pretty funny way to state this imperative, though.
 6 and 7 are reminders to check boundaries and "if you're going to fail, fail
 fast".
 
+9 contains is a reminder that "time and space you spend well to achieve a
+goal is not wasted", attached to a general reminder to be efficient. I think
+it was probably good to precede this with 8, don't leak any resources, because
+that is probably the one place where quality-of-life at other stages in
+development won't matter.
+
+10 is a reminder to prefer immutability when you don't intend to mutate
+something.
+
+11 Is about abstracting tricky functions into their own objects/functions,
+and 13 extends this into selecting supporting libraries that have already done
+the encapsulating/testing for you.
+
+Calling this section "Be a good programmer" maybe seems a bit dismissive of
+the utility of these principles in C++, so I want to take a minute to say the
+opposite. These things make you a competent object-oriented programmer, and C++
+very much likes object abstraction, so to use C++ competently you need to be
+aware of these preferences and know how to use the C++ constructs that support
+them. Do you know how to make a value constant? How about making an object 
+immutable? How readable is the code you're writing, and how would you make it
+more readable? I needed to refresh a lot of my own C++ knowledge to understand
+the examples provided here b/c while every OO language favors these points to
+some extent, they do so through different constructs. A C++ guide needs to talk
+about OO principles in order to talk about the C++ features that undergird
+these fundamentals.
+
+
 ## Take Advantage of Static Typing and your Compiler
 
 4 reduces to "make programs type safe" which is worth encouraging over the
@@ -60,6 +87,11 @@ combines static typing (mentioned above) with a feature I was less familiar
 with: static assertions. As a quick aside, static assertions apply some logic
 at compile time (like sizing a data type), rather than spending time executing
 instructions in the final binary.
+
+12 encourages you to use other tools like static analyzers to enforce coding
+standards, which isn't necessarily a compiler-advantage, but it any tool that
+you run your code through provides some pre-compile utility that should benefit
+the final program.
 
 ## Be Aware that this is a lower-level language
 
