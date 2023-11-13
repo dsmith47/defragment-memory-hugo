@@ -92,3 +92,25 @@ remember that this isn't a particularly powerful computer by modern PC
 standards. Just running the stuff you would use on your Linux PC is probably
 not going to work when the task is as intensive as audio/video. We need to
 optimize for the compute we have.
+
+## Option 1: LibreElec the OS that just barely runs media
+
+The first option to try and run things is to use a packaged project that is
+just about made for this purpose. LibreElec is a minimal OS layer packaging
+just enough support to launch the media application Kodi.
+
+And I'll say right off, this works. Like, if you load it onto an RPi and play
+a file, it'll run just fine. But when I tried to stream media, things got a
+little rough. Kodi supports streaming... kind of. Streaming services are
+delivered via Kodi-specific add-on applications, but these need to be implemented
+for each video source you want to watch from. You might get Netflix, but I
+don't know if anyone is working on CuriosityStream. And of course, they have all
+the baggage of any open source app interfacing with DRM-controlled centralized
+IP. That is to say, they break quite frequently when the service providing
+corporations change something, and in some cases that change is dciding to cut
+off support for this type of third-party support. Because there isn't a full
+graphical environment, you can't switch to a browser either.
+
+So getting that versatile support of web on Kodi will take some work.
+Contributing one's own browser is an option (and has been done in the past),
+but I want to try to see how some other alternativs work out-of-box.
