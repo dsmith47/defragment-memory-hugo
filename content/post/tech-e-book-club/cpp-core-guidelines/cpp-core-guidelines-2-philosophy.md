@@ -1,6 +1,6 @@
 +++
 author = "Doug Smith"
-title = "C++ Core Guidelines: Introduction"
+title = "C++ Core Guidelines: Philosophy"
 date = "2023-11-02"
 description = "Guiding philosophy on C++"
 
