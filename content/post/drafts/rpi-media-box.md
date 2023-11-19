@@ -2,7 +2,7 @@
 author = "Doug Smith"
 title = "Raspberry Pi as a Media Player"
 date = "2023-11-11"
-description = "Squeezing enoug power out of an rpi to play media"
+description = "Squeezing enough power out of an rpi to play media"
 toc = true
 draft = true
 
